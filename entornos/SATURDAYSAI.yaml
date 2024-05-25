@@ -214,5 +214,7 @@ dependencies:
   - zlib=1.2.13=hcfcfb64_5
   - zstd=1.5.5=hd43e919_0
   - pip:
+      - opencv-python==4.9.0.80
+      - opencv-python-headless==4.9.0.80
       - pymupdf==1.24.4
       - pymupdfb==1.24.3
