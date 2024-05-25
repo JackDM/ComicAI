@@ -45,7 +45,6 @@ dependencies:
   - idna=3.4=py311haa95532_0
   - importlib-metadata=7.0.2=pyha770c72_0
   - importlib_metadata=7.0.2=hd8ed1ab_0
-  - intel-openmp=2021.4.0=haa95532_3556
   - ipykernel=6.29.3=pyha63f2e9_0
   - ipython=8.22.2=pyh7428d3b_0
   - jedi=0.19.1=pyhd8ed1ab_0
@@ -100,7 +99,6 @@ dependencies:
   - matplotlib-inline=0.1.6=pyhd8ed1ab_0
   - mdurl=0.1.0=py311haa95532_0
   - mistune=2.0.4=py311haa95532_0
-  - mkl=2021.4.0=haa95532_640
   - mkl-service=2.4.0=py311h2bbff1b_0
   - mkl_fft=1.3.1=py311h743a336_0
   - mkl_random=1.2.2=py311heda8569_0
@@ -180,7 +178,6 @@ dependencies:
   - sqlite=3.41.2=h2bbff1b_0
   - srsly=2.4.8=py311hd77b12b_1
   - stack_data=0.6.2=pyhd8ed1ab_0
-  - tbb=2021.8.0=h59b6b97_0
   - terminado=0.17.1=py311haa95532_0
   - thinc=8.2.2=py311h30df693_0
   - threadpoolctl=2.2.0=pyh0d69192_0
@@ -214,7 +211,27 @@ dependencies:
   - zlib=1.2.13=hcfcfb64_5
   - zstd=1.5.5=hd43e919_0
   - pip:
+      - easyocr==1.7.1
+      - filelock==3.14.0
+      - fsspec==2024.5.0
+      - imageio==2.34.1
+      - intel-openmp==2021.4.0
+      - lazy-loader==0.4
+      - mkl==2021.4.0
+      - mpmath==1.3.0
+      - networkx==3.3
+      - ninja==1.11.1.1
       - opencv-python==4.9.0.80
       - opencv-python-headless==4.9.0.80
+      - pyclipper==1.3.0.post5
       - pymupdf==1.24.4
       - pymupdfb==1.24.3
+      - pytesseract==0.3.10
+      - python-bidi==0.4.2
+      - scikit-image==0.23.2
+      - shapely==2.0.4
+      - sympy==1.12
+      - tbb==2021.12.0
+      - tifffile==2024.5.22
+      - torch==2.3.0
+      - torchvision==0.18.0
