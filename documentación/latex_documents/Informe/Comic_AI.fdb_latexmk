@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1717518500.88732 "e:/SATURDAYSAI/PROYECTO_FINAL/ComicAI/documentación/latex_documents/Informe/Comic_AI.tex" "Comic_AI.pdf" "Comic_AI" 1717518501.82726 0
+["pdflatex"] 1717696939.47286 "e:/SATURDAYSAI/PROYECTO_FINAL/ComicAI/documentación/latex_documents/Informe/Comic_AI.tex" "Comic_AI.pdf" "Comic_AI" 1717696941.42981 0
   "C:/Users/Jack/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1717518127 81088 29d6fa367ac022d1b69251d68c0742e6 ""
   "C:/Users/Jack/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0900.pk" 1717511091 22504 b096c623f3bffeb086099e694aae30eb ""
   "C:/Users/Jack/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1717511098 25420 853a40120feb324d96ca271b80e779e6 ""
@@ -11,10 +11,10 @@
   "C:/Users/Jack/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1728.pk" 1717511095 42516 b525cdbccc41f30e486b20c7a5fe81c8 ""
   "C:/Users/Jack/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1717511074 24208158 6ad4677b701496eaab7e1045bf089e84 ""
   "C:/Users/Jack/AppData/Roaming/MiKTeX/tex/latex/babel-spanish/spanish.ldf" 1622279580 26965 3b6d1655ad716f98e788b1fb9f2e87b8 ""
-  "Comic_AI.aux" 1717518501 1175 9f1944e21a4c22b89cd12defc1064426 "pdflatex"
-  "Comic_AI.lof" 1717518501 109 54356f4c713d6b2c7b294626ae8dea84 "pdflatex"
-  "Comic_AI.tex" 1717518498 1527 15c8c5c538c7ef84af3b0c71e9a4af54 ""
-  "Comic_AI.toc" 1717518501 529 f6edd18d59b6d1c887ec4045b59807cf "pdflatex"
+  "Comic_AI.aux" 1717696941 1175 9f1944e21a4c22b89cd12defc1064426 "pdflatex"
+  "Comic_AI.lof" 1717696941 109 54356f4c713d6b2c7b294626ae8dea84 "pdflatex"
+  "Comic_AI.tex" 1717696935 1546 dce57d1195d04cb3217ffb72e859a0f7 ""
+  "Comic_AI.toc" 1717696941 529 f6edd18d59b6d1c887ec4045b59807cf "pdflatex"
   "E:/LATEX/fonts/tfm/jknappen/ec/ecbx0900.tfm" 993061954 3200 f959f56c26f697d341ba38dba18fe1f8 ""
   "E:/LATEX/fonts/tfm/jknappen/ec/ecbx1000.tfm" 993061956 3200 328792ff19833a39406f06fa0555a6dc ""
   "E:/LATEX/fonts/tfm/jknappen/ec/ecbx1200.tfm" 993061958 3200 b8d69bc738e5ef3e08cefeef3109ff56 ""
@@ -56,7 +56,7 @@
   "E:/LATEX/tex/latex/listings/listings.sty" 1679057124 80947 75a96bb4c9f40ae31d54a01d924df2ff ""
   "E:/LATEX/tex/latex/listings/lstmisc.sty" 1679057124 77021 d05e9115c67855816136d82929db8892 ""
   "E:/SATURDAYSAI/PROYECTO_FINAL/ComicAI/documentación/latex_figures/000000001761.jpg" 1717178699 115835 4535018f43bf478c260eb95102676b50 ""
-  "e:/SATURDAYSAI/PROYECTO_FINAL/ComicAI/documentación/latex_documents/Informe/Comic_AI.tex" 1717518498 1527 15c8c5c538c7ef84af3b0c71e9a4af54 ""
+  "e:/SATURDAYSAI/PROYECTO_FINAL/ComicAI/documentación/latex_documents/Informe/Comic_AI.tex" 1717696935 1546 dce57d1195d04cb3217ffb72e859a0f7 ""
   (generated)
   "Comic_AI.aux"
   "Comic_AI.lof"
