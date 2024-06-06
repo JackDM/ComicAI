@@ -60,11 +60,13 @@ dependencies:
   - intel-openmp=2021.4.0=haa95532_3556
   - ipykernel=6.29.3=pyha63f2e9_0
   - ipython=8.24.0=pyh7428d3b_0
+  - ipywidgets=8.1.2=py310haa95532_0
   - jedi=0.19.1=pyhd8ed1ab_0
   - joblib=1.4.0=py310haa95532_0
   - jpeg=9e=h2bbff1b_1
   - jupyter_client=8.6.1=pyhd8ed1ab_0
   - jupyter_core=5.7.2=py310h5588dad_0
+  - jupyterlab_widgets=3.0.10=py310haa95532_0
   - keras=2.10.0=py310haa95532_0
   - keras-applications=1.0.8=py_1
   - keras-preprocessing=1.1.2=pyhd3eb1b0_0
@@ -198,6 +200,7 @@ dependencies:
   - wcwidth=0.2.13=pyhd8ed1ab_0
   - werkzeug=2.3.8=py310haa95532_0
   - wheel=0.43.0=py310haa95532_0
+  - widgetsnbextension=4.0.10=py310haa95532_0
   - win_inet_pton=1.1.0=py310haa95532_0
   - winpty=0.4.3=4
   - wrapt=1.14.1=py310h2bbff1b_0
@@ -215,7 +218,11 @@ dependencies:
       - nltk==3.8.1
       - opencv-python==4.9.0.80
       - pycocotools==2.0.7
+      - pymupdf==1.24.5
+      - pymupdfb==1.24.3
       - pytesseract==0.3.10
       - regex==2024.5.15
       - scikit-image==0.23.2
+      - tensorflow-addons==0.22.0
       - tifffile==2024.5.22
+      - typeguard==2.13.3
