@@ -155,7 +155,6 @@ dependencies:
       - tifffile==2024.5.22
       - tokenizers==0.19.1
       - torch==2.3.1
-      - torchaudio==2.3.1+cpu
       - torchvision==0.18.1
       - tqdm==4.66.4
       - transformers==4.41.2
