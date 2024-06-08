@@ -1,44 +1,74 @@
 name: SATURDAYS-2
 channels:
+  - pytorch
   - conda-forge
   - defaults
 dependencies:
   - asttokens=2.4.1=pyhd8ed1ab_0
+  - blas=1.0=mkl
+  - brotli-python=1.0.9=py312hd77b12b_8
   - bzip2=1.0.8=h2bbff1b_6
   - ca-certificates=2024.6.2=h56e8100_0
+  - certifi=2024.6.2=py312haa95532_0
   - colorama=0.4.6=pyhd8ed1ab_0
   - comm=0.2.2=pyhd8ed1ab_0
+  - cudatoolkit=11.8.0=hd77b12b_0
   - debugpy=1.6.7=py312hd77b12b_0
   - decorator=5.1.1=pyhd8ed1ab_0
   - exceptiongroup=1.2.0=pyhd8ed1ab_2
   - executing=2.0.1=pyhd8ed1ab_0
   - expat=2.6.2=hd77b12b_0
+  - freetype=2.12.1=ha860e81_0
+  - idna=3.7=py312haa95532_0
   - importlib-metadata=7.1.0=pyha770c72_0
   - importlib_metadata=7.1.0=hd8ed1ab_0
   - ipykernel=6.29.4=pyh4bbf305_0
   - ipython=8.25.0=pyh7428d3b_0
   - ipywidgets=8.1.2=py312haa95532_0
   - jedi=0.19.1=pyhd8ed1ab_0
+  - jinja2=3.1.4=py312haa95532_0
+  - jpeg=9e=h2bbff1b_1
   - jupyter_client=8.6.2=pyhd8ed1ab_0
   - jupyter_core=5.5.0=py312haa95532_0
   - jupyterlab_widgets=3.0.10=py312haa95532_0
   - krb5=1.21.2=heb0366b_0
+  - lcms2=2.12=h83e58a3_0
+  - lerc=3.0=hd77b12b_0
+  - libdeflate=1.17=h2bbff1b_1
   - libffi=3.4.4=hd77b12b_1
+  - libjpeg-turbo=2.0.0=h196d8e1_0
+  - libpng=1.6.39=h8cc25b3_0
   - libsodium=1.0.18=h8d14728_1
+  - libtiff=4.5.1=hd77b12b_0
+  - libuv=1.44.2=h2bbff1b_0
+  - libwebp-base=1.3.2=h2bbff1b_0
+  - lz4-c=1.9.4=h2bbff1b_1
   - matplotlib-inline=0.1.7=pyhd8ed1ab_0
+  - mkl-service=2.4.0=py312h2bbff1b_1
+  - mkl_fft=1.3.8=py312h2bbff1b_0
+  - mkl_random=1.2.4=py312h59b6b97_0
+  - mpmath=1.3.0=py312haa95532_0
   - nest-asyncio=1.6.0=pyhd8ed1ab_0
+  - numpy=1.26.4=py312hfd52020_0
+  - numpy-base=1.26.4=py312h4dde369_0
+  - openjpeg=2.4.0=h4fc8c34_0
   - openssl=3.3.1=h2466b09_0
   - packaging=24.0=pyhd8ed1ab_0
   - parso=0.8.4=pyhd8ed1ab_0
   - pickleshare=0.7.5=py_1003
+  - pillow=10.3.0=py312h2bbff1b_0
   - pip=24.0=py312haa95532_0
   - platformdirs=4.2.2=pyhd8ed1ab_0
   - prompt-toolkit=3.0.46=pyha770c72_0
   - psutil=5.9.0=py312h2bbff1b_0
   - pure_eval=0.2.2=pyhd8ed1ab_0
   - pygments=2.18.0=pyhd8ed1ab_0
+  - pysocks=1.7.1=py312haa95532_0
   - python=3.12.3=h1d929f7_1
+  - pytorch=2.3.1=py3.12_cpu_0
+  - pytorch-mutex=1.0=cpu
   - pywin32=305=py312h2bbff1b_0
+  - pyyaml=6.0.1=py312h2bbff1b_0
   - pyzmq=25.1.2=py312hd77b12b_0
   - setuptools=69.5.1=py312haa95532_0
   - six=1.16.0=pyh6c4a22f_0
@@ -50,20 +80,23 @@ dependencies:
   - typing_extensions=4.12.2=pyha770c72_0
   - tzdata=2024a=h04d1e81_0
   - ucrt=10.0.22621.0=h57928b3_0
+  - urllib3=2.2.1=py312haa95532_0
   - vc=14.2=h2eaa2aa_1
   - vc14_runtime=14.40.33810=ha82c5b3_20
   - vs2015_runtime=14.40.33810=h3bf8584_20
   - wcwidth=0.2.13=pyhd8ed1ab_0
   - wheel=0.43.0=py312haa95532_0
   - widgetsnbextension=4.0.10=py312haa95532_0
+  - win_inet_pton=1.1.0=py312haa95532_0
   - xz=5.4.6=h8cc25b3_1
+  - yaml=0.2.5=he774522_0
   - zeromq=4.3.5=he1f189c_4
   - zipp=3.17.0=pyhd8ed1ab_0
   - zlib=1.2.13=h8cc25b3_1
+  - zstd=1.5.5=hd43e919_2
   - pip:
       - absl-py==2.1.0
       - astunparse==1.6.3
-      - certifi==2024.6.2
       - charset-normalizer==3.3.2
       - contourpy==1.2.1
       - cycler==0.12.1
@@ -77,10 +110,8 @@ dependencies:
       - grpcio==1.64.1
       - h5py==3.11.0
       - huggingface-hub==0.23.3
-      - idna==3.7
       - imageio==2.34.1
       - intel-openmp==2021.4.0
-      - jinja2==3.1.4
       - keras==3.3.3
       - kiwisolver==1.4.5
       - lazy-loader==0.4
@@ -92,16 +123,13 @@ dependencies:
       - mdurl==0.1.2
       - mkl==2021.4.0
       - ml-dtypes==0.3.2
-      - mpmath==1.3.0
       - namex==0.0.8
       - networkx==3.3
       - ninja==1.11.1.1
-      - numpy==1.26.4
       - opencv-python==4.10.0.82
       - opencv-python-headless==4.10.0.82
       - opt-einsum==3.3.0
       - optree==0.11.0
-      - pillow==10.3.0
       - protobuf==4.25.3
       - pyclipper==1.3.0.post5
       - pymupdf==1.24.5
@@ -110,7 +138,6 @@ dependencies:
       - pytesseract==0.3.10
       - python-bidi==0.4.2
       - python-dateutil==2.9.0.post0
-      - pyyaml==6.0.1
       - regex==2024.5.15
       - requests==2.32.3
       - rich==13.7.1
@@ -132,6 +159,5 @@ dependencies:
       - torchvision==0.18.1
       - tqdm==4.66.4
       - transformers==4.41.2
-      - urllib3==2.2.1
       - werkzeug==3.0.3
       - wrapt==1.16.0
