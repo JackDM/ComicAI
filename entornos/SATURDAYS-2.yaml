@@ -11,8 +11,12 @@ dependencies:
   - bzip2=1.0.8=h2bbff1b_6
   - ca-certificates=2024.6.2=h56e8100_0
   - certifi=2024.6.2=py312haa95532_0
+  - cffi=1.16.0=py312h2bbff1b_1
+  - chardet=4.0.0=py312haa95532_1003
+  - charset-normalizer=2.0.4=pyhd3eb1b0_0
   - colorama=0.4.6=pyhd8ed1ab_0
   - comm=0.2.2=pyhd8ed1ab_0
+  - cryptography=42.0.5=py312h89fc84f_1
   - cuda-cccl=12.4.127=0
   - cuda-cudart=12.1.105=0
   - cuda-cudart-dev=12.1.105=0
@@ -34,7 +38,8 @@ dependencies:
   - expat=2.6.2=hd77b12b_0
   - filelock=3.13.1=py312haa95532_0
   - freetype=2.12.1=ha860e81_0
-  - idna=3.7=py312haa95532_0
+  - huggingface_hub=0.23.1=py312haa95532_0
+  - idna=2.10=pyhd3eb1b0_0
   - importlib-metadata=7.1.0=pyha770c72_0
   - importlib_metadata=7.1.0=hd8ed1ab_0
   - ipykernel=6.29.4=pyh4bbf305_0
@@ -98,26 +103,32 @@ dependencies:
   - psutil=5.9.0=py312h2bbff1b_0
   - pthreads-win32=2.9.1=hfa6e2cd_3
   - pure_eval=0.2.2=pyhd8ed1ab_0
+  - pycparser=2.21=pyhd3eb1b0_0
   - pygments=2.18.0=pyhd8ed1ab_0
+  - pyopenssl=24.0.0=py312haa95532_0
   - pysocks=1.7.1=py312haa95532_0
   - python=3.12.3=h1d929f7_1
+  - python-dateutil=2.9.0post0=py312haa95532_2
   - pytorch=2.3.1=py3.12_cuda12.1_cudnn8_0
   - pytorch-cuda=12.1=hde6ce7c_5
   - pytorch-mutex=1.0=cuda
   - pywin32=305=py312h2bbff1b_0
   - pyyaml=6.0.1=py312h2bbff1b_0
   - pyzmq=25.1.2=py312hd77b12b_0
+  - regex=2023.10.3=py312h2bbff1b_0
   - setuptools=69.5.1=py312haa95532_0
   - six=1.16.0=pyh6c4a22f_0
   - sqlite=3.45.3=h2bbff1b_0
   - stack_data=0.6.2=pyhd8ed1ab_0
   - tk=8.6.14=h0416ee5_0
   - tornado=6.3.3=py312h2bbff1b_0
+  - tqdm=4.66.4=py312hfc267ef_0
   - traitlets=5.14.3=pyhd8ed1ab_0
+  - typing-extensions=4.12.2=hd8ed1ab_0
   - typing_extensions=4.12.2=pyha770c72_0
   - tzdata=2024a=h04d1e81_0
   - ucrt=10.0.22621.0=h57928b3_0
-  - urllib3=2.2.1=py312haa95532_0
+  - urllib3=1.26.18=py312haa95532_0
   - vc=14.2=h2eaa2aa_1
   - vc14_runtime=14.40.33810=ha82c5b3_20
   - vs2015_runtime=14.40.33810=h3bf8584_20
@@ -134,7 +145,6 @@ dependencies:
   - pip:
       - absl-py==2.1.0
       - astunparse==1.6.3
-      - charset-normalizer==3.3.2
       - contourpy==1.2.1
       - cycler==0.12.1
       - easyocr==1.7.1
@@ -145,7 +155,6 @@ dependencies:
       - google-pasta==0.2.0
       - grpcio==1.64.1
       - h5py==3.11.0
-      - huggingface-hub==0.23.3
       - imageio==2.34.1
       - intel-openmp==2021.4.0
       - keras==3.3.3
@@ -172,8 +181,6 @@ dependencies:
       - pyparsing==3.1.2
       - pytesseract==0.3.10
       - python-bidi==0.4.2
-      - python-dateutil==2.9.0.post0
-      - regex==2024.5.15
       - requests==2.32.3
       - rich==13.7.1
       - safetensors==0.4.3
@@ -191,7 +198,6 @@ dependencies:
       - tokenizers==0.19.1
       - torchaudio==2.3.1
       - torchvision==0.18.1
-      - tqdm==4.66.4
       - transformers==4.41.2
       - werkzeug==3.0.3
       - wrapt==1.16.0
