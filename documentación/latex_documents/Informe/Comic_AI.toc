@@ -1,9 +1,0 @@
-\babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Introducción}{2}{}%
-\contentsline {subsection}{\numberline {1.1}Ejemplo}{2}{}%
-\contentsline {section}{\numberline {2}Objetivos}{2}{}%
-\contentsline {section}{\numberline {3}Materiales y métodos}{2}{}%
-\contentsline {section}{\numberline {4}Resultados y discusión}{2}{}%
-\contentsline {section}{\numberline {5}Conclusiones}{2}{}%
-\contentsline {section}{\numberline {6}Valoración personal}{2}{}%
-\contentsline {section}{\numberline {7}Bibliografía}{2}{}%
