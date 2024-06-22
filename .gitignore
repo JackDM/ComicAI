@@ -162,4 +162,4 @@ cython_debug/
 
 train/models/modelo_finetuneado_trOCR/*
 train/models/procesador_finetuneado_trOCR/*
-train/models/runs/*
+train/results/*
