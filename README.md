@@ -1,10 +1,13 @@
 # ComicAI
 
-NOS QUEDAMOS CON :
-1
-2.1
-3.0.1 EASYOCR PENDIENTE DE FINETUNING
-4.2.1 LARGE PENDIENTE DE FINETUNING
-5 TRADUCCIÓN DE TEXTOS
-6 TTS
-7 PIPELINE DE EJECUCION COMPLETO
+## Funcionalidad
+
+## Estructura
+En el presente proyecto encontramos la siguiente estructura de directorios:
+- data
+- documentation
+- environments
+- exeution_files
+- train
+## Ejecución
+
