@@ -2,7 +2,7 @@
 Sistema de Narración de Cómics para Personas con Discapacidad Visual.
 El presente proyecto pretende ayudar a las personas con discapacidad visual a disfrutal del mundo del comic a través de la narración de las historias gráficas.
 ## Funcionalidad
-El presente proyecto realiza las diferenes operacione spara llegar al resultado final por módulo inviduales en cascada:
+La pipeline del proyecto se realiza a través diferenes operacione para llegar al resultado final a través de módulos inviduales en cascada:
 
 - **1_divide_page**
 
