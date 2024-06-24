@@ -1,7 +1,23 @@
 from packages import *
 
-#Función para dividir las páginas del pdf
+# Función para crear directorios si no existen
+def crear_directorios_si_no_existen():
+    # Directorio de salida para las imágenes
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
+        print(f"Directorio '{output_directory}' creado correctamente.")
+    else:
+        print(f"El directorio '{output_directory}' ya existe.")
+    
+    # Directorio para el archivo CSV de rutas
+    routes_directory = os.path.dirname(output_directory_csv)
+    if not os.path.exists(routes_directory):
+        os.makedirs(routes_directory)
+        print(f"Directorio '{routes_directory}' creado correctamente.")
+    else:
+        print(f"El directorio '{routes_directory}' ya existe.")
 
+# Función para dividir las páginas del pdf
 def extract_images_from_pdf(pdf_path, output_folder):
     document = fitz.open(pdf_path)
     for page_num in range(len(document)):
@@ -12,74 +28,38 @@ def extract_images_from_pdf(pdf_path, output_folder):
             base_image = document.extract_image(xref)
             image_bytes = base_image["image"]
             image_ext = base_image["ext"]
-            image_path = f"{output_folder}/page{page_num+1}_img.{image_ext}"
+            image_path = os.path.join(output_folder, f"page{page_num+1}_img.{image_ext}")
             with open(image_path, "wb") as img_file:
                 img_file.write(image_bytes)
     print(f"Images extracted and saved to {output_folder}")
 
-#Función para crear un archivo con todas las rutas de las páginas separadas anteriormente
-
+# Función para crear un archivo con todas las rutas de las páginas separadas anteriormente
 def create_image_list(input_folder, output_csv):
-    #Crear y Escribir el archivo
+    # Crear y escribir en el archivo CSV
     with open(output_csv, mode='a', newline='') as file:
         writer = csv.writer(file)
         for img_name in os.listdir(input_folder):
             img_path = os.path.join(input_folder, img_name)
             writer.writerow([img_path])
 
+# Definir los directorios de entrada y salida
 input_directory = r'.\data\input\Comic_test'
 output_directory = r'.\data\output\divide_pages_test\pages_raw'
 output_directory_csv = r'.\data\output\divide_pages_test\pages_routes\images_routes.csv'
 
-#Primero borrar el archivo de lista csv si existe
-if os.path.exists(output_directory_csv):
-    os.remove(output_directory_csv)
-    print(f"Archivo '{output_directory_csv}' eliminado correctamente.")
-else:
-    print(f"El archivo '{output_directory_csv}' no existe, se va a crear.")
+# Verificar y crear directorios necesarios
+crear_directorios_si_no_existen()
 
-#Eliminar subestructura creada de una ejecución anterior
-def eliminar_subdirectorios(directorio):
-    if os.path.exists(directorio) and os.path.isdir(directorio):
-        elementos = os.listdir(directorio)
-        if elementos:
-            for elemento in elementos:
-                ruta_elemento = os.path.join(directorio, elemento)
-                if os.path.isdir(ruta_elemento):
-                    shutil.rmtree(ruta_elemento)
-                    print(f"Se ha eliminado el subdirectorio: {ruta_elemento}")
-                else:
-                    print(f"'{ruta_elemento}' no es un directorio, no se eliminará.")
-        else:
-            print(f"El directorio {directorio} está vacío.")
-    else:
-        os.mkdir(output_directory)
-        print(f"El directorio {directorio} no existe o no es un directorio.")
-
-# Definir la ruta
-output_directory = r'.\data\output\divide_pages_test\pages_raw'
-
-# Eliminar solo los subdirectorios dentro de output_directory
-eliminar_subdirectorios(output_directory)
-
-# Recorrer el directorio de forma recursiva
+# Procesar archivos y crear listas de rutas
 for raiz, subcarpetas, archivos in os.walk(input_directory):
-    # Procesar subcarpetas
     for subcarpeta in subcarpetas:
-        print(f"Subcarpeta: {subcarpeta}")
-        ruta_carpeta_salida = f"{output_directory}\\{subcarpeta}"
-        # verificamos si el directorio que vamos a crear, de salida, existe
-        os.mkdir(ruta_carpeta_salida)
-        print("Directorio %s creado!" % ruta_carpeta_salida)
-        # Procesar archivos
-        directorio_procesado = f"{input_directory}\\{subcarpeta}"
-        procesado_archivos = os.listdir(f"{input_directory}\\{subcarpeta}")
-        # Procesar cada nombre de archivo
-        for nombre_archivo in procesado_archivos:
-            print(f"Procesando carpeta: {directorio_procesado}")
-            print(f"Archivo: {nombre_archivo}")
-            print(f"Ruta de la carpeta de salida: {ruta_carpeta_salida}")
-            # verificamos si el archivo que vamos a crear, de salida, existe
-            extract_images_from_pdf(f"{directorio_procesado}\\{nombre_archivo}", ruta_carpeta_salida)
+        ruta_carpeta_salida = os.path.join(output_directory, subcarpeta)
+        if not os.path.exists(ruta_carpeta_salida):
+            os.makedirs(ruta_carpeta_salida)
+            print(f"Directorio '{ruta_carpeta_salida}' creado correctamente.")
+        directorio_procesado = os.path.join(input_directory, subcarpeta)
+        for nombre_archivo in os.listdir(directorio_procesado):
+            archivo_completo = os.path.join(directorio_procesado, nombre_archivo)
+            extract_images_from_pdf(archivo_completo, ruta_carpeta_salida)
             create_image_list(ruta_carpeta_salida, output_directory_csv)
             print(f"Fichero de rutas creado en {output_directory_csv} !")
