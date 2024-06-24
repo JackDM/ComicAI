@@ -121,7 +121,7 @@ El proceso se ejecutará al completo, imprimiendo el log perteniciente de cada m
 
 Los archivos de audio de cada viñeta se pueden encontrar en el directorio ``data/output/output_audio_test/combined.``
 
-Por otro lado en cada una de los siguientes directorios encontramos los archivos de salida de cada módulo proceso:
+Por otro lado en cada una de los siguientes directorios encontramos los archivos de salida de cada módulo o proceso:
 
 - data/output
     - divide_images_test (``imágenes derivadas de la identificación de viñetas``)
