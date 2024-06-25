@@ -20,7 +20,7 @@ En este código se utilizan varias librerías para diferentes propósitos: cv2 (
 
 Indetifica el diálogo entre los personajes y el texto que aparece en la viñeta como onomatopeyas o descripciones. *Esta descripción es en español*
 
-En este código se utilizan varias librerías para diferentes propósitos: torch (PyTorch) se usa para verificar la disponibilidad de CUDA y para manejar el dispositivo (CPU o GPU) en el que se ejecutarán los modelos de procesamiento de texto e imagen; transformers de Hugging Face se emplea para cargar los modelos preentrenados de TrOCR y su procesador, permitiendo realizar el reconocimiento óptico de caracteres en las imágenes; easyocr se utiliza para detectar y leer texto en imágenes sin necesidad de CUDA; cv2 (OpenCV) se usa para cargar y manipular imágenes, incluyendo el recorte y dibujo de cajas delimitadoras alrededor de las áreas de texto detectado; os se utiliza para interactuar con el sistema operativo, permitiendo la navegación por los directorios de entrada y salida, así como la creación de nuevas carpetas; matplotlib.pyplot se usa para visualizar las imágenes con las cajas delimitadoras dibujadas; y PIL (Pillow) se emplea para convertir imágenes de formato OpenCV a formato PIL para su procesamiento por los modelos de Hugging Face.
+En este código se utilizan varias librerías para diferentes propósitos: torch (PyTorch) se usa para verificar la disponibilidad de CUDA y para manejar el dispositivo (CPU o GPU) en el que se ejecutarán los modelos de procesamiento de texto e imagen; transformers de Hugging Face se emplea para cargar los modelos preentrenados de TrOCR y su procesador, permitiendo realizar el reconocimiento óptico de caracteres en las imágenes; easyocr se utiliza para detectar y leer texto en imágenes sin necesidad de CUDA. En este caso se utiliza para el reconocimiento de las zonas donde hay texto, ya que el reconocimiento del propio texto se hace con el modelo finetuned de trOCR; cv2 (OpenCV) se usa para cargar y manipular imágenes, incluyendo el recorte y dibujo de cajas delimitadoras alrededor de las áreas de texto detectado; os se utiliza para interactuar con el sistema operativo, permitiendo la navegación por los directorios de entrada y salida, así como la creación de nuevas carpetas; matplotlib.pyplot se usa para visualizar las imágenes con las cajas delimitadoras dibujadas; y PIL (Pillow) se emplea para convertir imágenes de formato OpenCV a formato PIL para su procesamiento por los modelos de Hugging Face.
 
 - **4_img_to_nlp**
 
@@ -57,6 +57,7 @@ En el presente proyecto encontramos la siguiente estructura de directorios:
         - output_description_translate_test (`archivos de texto con la traducción de los archivos de descripción de cada viñeta`)
         - output_text_test (`archivos de texto donde se transcribe el texto que aparece en cada viñeta`)
 - documentation (`documentación final del proyecto`)
+    - images (`imágenes usadas para la presentación y/o el paper`)
     - *paper.docx* (`paper del proyecto`)
     - *Presentation.pptx* (`presentación del proyecto`)
 - environments (`entornos para cargar en anaconda`)
