@@ -108,7 +108,7 @@ El proceso funciona desde la carga de un cómic en el directorio ``/data/input/C
 
 **2. Ejecución de la pipeline**
 
-La ejecución del proceso completo se hace ejecutando el archivo comic_AI.py del directorio raiz. Este no necesita la introducción de parámetros. *Previo a este paso será necesario instalar todas las librerías necearias o cargar el entorno de anaconda que se encuentra en el directorio ``/environments``. El terminal de ejecución debe ejecutarse en ese entorno proporcionado.*
+La ejecución del proceso completo se hace ejecutando el archivo comic_AI.py del directorio raiz. Este no necesita la introducción de parámetros. *Previo a este paso será necesario instalar todas las librerías necearias o cargar el entorno de anaconda que se encuentra en el directorio ``/environments``. El terminal de ejecución debe ejecutarse en ese entorno proporcionado. También será necesario decargar los modelo de la siguiente ruta (<https://drive.google.com/drive/folders/1oBLlCRzSQtV-mYpyaOOrT3YkxbWxSkVU?usp=drive_link>) y cargarlos en el directorio `/train`*
 
 Será necesario abrir un terminal el del directorio raíz de ComicAI y ejecutar uno de estos 2 comandos:
 
