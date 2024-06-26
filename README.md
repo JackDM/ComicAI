@@ -137,6 +137,13 @@ Por otro lado en cada una de los siguientes directorios encontramos los archivos
 ## Enlaces de interés
 
 Enlace al paper de Medium.com:
-<>
+<https://medium.com/sistema-de-narración-de-cómics-para-personas-con/sistema-de-narración-de-cómics-para-personas-con-discapacidad-visual-f0bd9c86f14f>
 
 
+## Autores del proyecto
+
+`@JackDM`
+
+`@CharlosLR`
+
+`@RogerBritoAI`
