@@ -1,8 +1,8 @@
 # ComicAI
 Sistema de Narración de Cómics para Personas con Discapacidad Visual.
-El presente proyecto pretende ayudar a las personas con discapacidad visual a disfrutal del mundo del comic a través de la narración de las historias gráficas.
-## Funcionalidad
-La pipeline del proyecto se realiza a través diferenes operacione para llegar al resultado final a través de módulos inviduales en cascada:
+El presente proyecto pretende ayudar a las personas con discapacidad visual a disfrutar del mundo del comic a través de la narración de las historias gráficas.
+## Estructura y funcionalidad de los módulos
+La pipeline del proyecto se realiza a través diferenes operaciones para llegar al resultado final a través de módulos inviduales en cascada:
 
 - **1_divide_page**
 
@@ -42,7 +42,7 @@ En este código se utilizan varias librerías para diferentes propósitos:
 gtts: La librería gtts (Google Text-to-Speech) se usa para convertir texto a audio. Utiliza el servicio de TTS de Google para generar archivos de audio en diferentes idiomas. moviepy.editor: La librería moviepy se utiliza para manipular archivos de audio y video. En este caso, se usa para concatenar clips de audio. pathlib.Path: Proporciona una manera de trabajar con rutas de archivos y directorios de forma más intuitiva y moderna que el módulo os.path. os: La librería os se usa para interactuar con el sistema operativo, permitiendo navegar por directorios y crear carpetas si es necesario.
 
 
-## Estructura
+## Estructura de directorios
 En el presente proyecto encontramos la siguiente estructura de directorios:
 - data (`archivos de entrada y salida`)
     - input (`carpeta para cargar el comic`)
@@ -57,7 +57,7 @@ En el presente proyecto encontramos la siguiente estructura de directorios:
         - output_description_translate_test (`archivos de texto con la traducción de los archivos de descripción de cada viñeta`)
         - output_text_test (`archivos de texto donde se transcribe el texto que aparece en cada viñeta`)
 - documentation (`documentación final del proyecto`)
-    - images (`imágenes usadas para la presentación y/o el paper`)
+    - data (`datos usados para la presentación y/o el paper`)
     - *paper.docx* (`paper del proyecto`)
     - *Presentation.pptx* (`presentación del proyecto`)
 - environments (`entornos para cargar en anaconda`)
@@ -108,7 +108,7 @@ El proceso funciona desde la carga de un cómic en el directorio ``/data/input/C
 
 **2. Ejecución de la pipeline**
 
-La ejecución del proceso completo se hace ejecutando el archivo comic_AI.py del directorio raiz. Este no necesita la introducción de parámetros. *Previo a este paso será necesario instalar todas las librerías necearias o cargar el entorno de anaconda que se encuentra en el directorio ``/environments``. El terminal de ejecución debe ejecutarse en ese entorno proporcionado.*
+La ejecución del proceso completo se hace ejecutando el archivo comic_AI.py del directorio raiz. Este no necesita la introducción de parámetros. *Previo a este paso será necesario instalar todas las librerías necearias o cargar el entorno de anaconda que se encuentra en el directorio ``/environments``. El terminal de ejecución debe ejecutarse en ese entorno proporcionado. También será necesario decargar los modelo de la siguiente ruta (<https://drive.google.com/drive/folders/1oBLlCRzSQtV-mYpyaOOrT3YkxbWxSkVU?usp=drive_link>) y cargarlos en el directorio `/train`*
 
 Será necesario abrir un terminal el del directorio raíz de ComicAI y ejecutar uno de estos 2 comandos:
 
@@ -134,4 +134,16 @@ Por otro lado en cada una de los siguientes directorios encontramos los archivos
     - output_description_translate_test (`archivos de texto con la traducción de los archivos de descripción de cada viñeta`)
     - output_text_test (`archivos de texto donde se transcribe el texto que aparece en cada viñeta`)
 
+## Enlaces de interés
 
+Enlace al paper de Medium.com:
+<https://medium.com/sistema-de-narración-de-cómics-para-personas-con/sistema-de-narración-de-cómics-para-personas-con-discapacidad-visual-f0bd9c86f14f>
+
+
+## Autores del proyecto
+
+`@JackDM`
+
+`@CharlosLR`
+
+`@RogerBritoAI`
