@@ -14,4 +14,4 @@ elapsed_time = time() - start_time
 
 print(f"El proceso ha tardado: {elapsed_time}")
 
-print("ENHORABUENA, YA SE PUEDE ESCUCHAR ESTE HISTORIA VISUL !!")
+print("ENHORABUENA, YA SE PUEDE ESCUCHAR ESTE HISTORIA VISUAL !!")
